@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>--Studios</title>
+  <link href="css/index.css" rel="stylesheet" type="text/css" media="all"/>
+  <link href="fontawesome-free-5.13.0-web/css/fontawesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/regular.min.css">
+<link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/solid.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+   <body>
+<div class="logo" ><img src="images/logo.png"alt="logo"><span class="text-white">Logo</span></div>
+        <div class="mycontainer">
+            <div class="top_bar">
+                <a href="mailto:#"><i class="fa fa-envelope icon"></i></a>
+                <!--<a href="#"><i class="fab fa-github icon"></i></a>
+                <a href="#"><i class="fab fa-linkedin icon"></i></a>
+                <a href="#"><i class="fab fa-twitter icon"></i></a>
+                <a href="#"><i class="fab fa-youtube icon"></i></a>
+                <a href="#"><i class="fab fa-instagram icon"></i></a>
+                <a href="#"><i class="fab fa-facebook icon"></i></a>-->
+            </div>
+             <div class="main_div">
+                <div class="top_bar2">
+                  <div>
+                    <a class="text-white" href="index.html">Home</a>
+                    <a class="text-white" href="explore.html">Explore</a>
+                    <a class="text-white" href="contactUs.html">Contact Us</a>
+                    <a class="text-white" href="login.html">Admin</a>
+                    </div>
+                </div>
+                <div class="desc_title">
+                  <h2 class="text-center text-muted" style="margin-top:10px">Our Artists</h2>
+                </div>
+                <div class="artists">
+                  <div class="view_btn">
+                    <!---button o choose list or grid view-->
+                  <button onclick="listView()" class="view_btn_"><i class="fa fa-bars"></i>List View</button>
+                  <button onclick="gridView()" class="view_btn_"><i class="fa fa-th-large"></i>Grid View</button>
+                  </div>
+                 <div class="myrow">
+                    <div class="column" id="column1" onclick="moreDetails()">
+                      <img src="images/lady.jpg" class="desc_img" alt="logo">
+                         <div class="desc_">
+                           <h2>Lucy Stone</h2>
+                          <p>Contry Song singer...</p>
+                          <p>Some text...</p>
+                          <p>Some text...</p>
+                        </div>
+                    </div>
+                    <div class="column" id="column2" onclick="moreDetails()">
+                      <img src="images/opera.jpg" class="desc_img" alt="logo">
+                         <div class="desc_">
+                           <h2>Emma Chan</h2>
+                          <p>Opera Singer...</p>
+                          <p>Some text...</p>
+                          <p>Some text...</p>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="myrow">
+                  <div class="column" id="column3" onclick="moreDetails()">
+                    <img src="images/guitar.jpg" class="desc_img" alt="logo">
+                       <div class="desc_">
+                         <h2>John Lewis</h2>
+                        <p>Guitar Specialist...</p>
+                        <p>Some text...</p>
+                          <p>Some text...</p>
+                      </div>
+                  </div>
+                  <div class="column" id="column4" onclick="moreDetails()">
+                    <img src="images/singer.jpg" class="desc_img" alt="logo">
+                       <div class="desc_">
+                         <h2>Kent Adams</h2>
+                        <p>Performer...</p>
+                        <p>Some text...</p>
+                          <p>Some text...</p>
+                      </div>
+                  </div>
+               </div>
+               </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/main.js"></script>
+   </body>
+</html>

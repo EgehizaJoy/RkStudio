@@ -1,0 +1,112 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>--Studios</title>
+  <link href="css/index.css" rel="stylesheet" type="text/css" media="all"/>
+  <link href="css/upload.css" rel="stylesheet" type="text/css" media="all"/>
+  <link href="fontawesome-free-5.13.0-web/css/fontawesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/regular.min.css">
+<link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/solid.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+<script src="ckeditor/ckeditor.js"></script>
+</head>
+   <body>
+    <img src="images/" class="logo" alt="logo">
+        <div class="container">
+            <div class="top_bar">
+                <a href="mailto:#"><i class="fa fa-envelope icon"></i></a>
+                <!--<a href="#"><i class="fab fa-github icon"></i></a>
+                <a href="#"><i class="fab fa-linkedin icon"></i></a>
+                <a href="#"><i class="fab fa-twitter icon"></i></a>
+                <a href="#"><i class="fab fa-youtube icon"></i></a>
+                <a href="#"><i class="fab fa-instagram icon"></i></a>
+                <a href="#"><i class="fab fa-facebook icon"></i></a>-->
+            </div>
+             <div class="main_div">
+                <div class="top_bar2">
+                    <div>
+                        <a href="index.html">Home</a>
+                        <a href="explore.html">Explore</a>
+                        <a href="contactUs.html">Contact Us</a>
+                        <a href="login.html">Admin</a>
+                        </div>
+                </div>
+                <div class="upload_container">
+                     <!--Div for the login form-->
+                    <div class="uploadform">
+                    <form method="post" class="upload" enctype="multipart/form-data"> 
+                        <h2 >Personal Details</h2>
+                                <div class="input-icons-"> 
+                                    <i class="fa fa-user icon"></i> 
+                                    <input class="input-field-" 
+                                           type="text"
+                                           name="username"
+                                           maxlength="50"
+                                           value=""
+                                           placeholder="Username" required> 
+                                </div> 
+                                <h3>Upload profile picture
+                                    <input type="file" name="file" accept="image/*" onchange="preview_image(event)" required></h3>
+                                      <img id="output_image" style="width:200;height:200; background-image: url('images/img.jpg');border: 3px solid white;
+                                      border-radius: 50%;"/>
+                                      <h3>Brief description about artist</h3>
+                                      <textarea class="brief_description" name="brief_description" id="brief_description" rows="20" cols="100"
+                                       maxlength="2000"> 
+                                       </textarea>
+                                       <script>
+                                       //replace the text area id <body> with ck editor
+                                       //instance, using deault configuration
+                                       CKEDITOR.replace('brief_description',{
+                                           language:'eng'
+                                       });
+                                       </script>  
+
+                                       <div style="display: flex;flex-direction: row;justify-content: space-between;">
+                                    <div style="width: 80%;">
+                                    <h3>Artist Samples</h3>
+                                     <div class="input-icons-"> 
+                                      <input class="input-field-" 
+                                      type="text"
+                                      name=""
+                                      maxlength="26"
+                                      placeholder="Sample Title" required> 
+                                     </div> 
+                                     <div class="input-icons-"> 
+                                         <input class="input-field-" 
+                                         type="text"
+                                         name=""
+                                         maxlength="75"
+                                         placeholder="Sample subtitles" required> 
+                                        </div>
+                                        <div class="input-icons-"> 
+                                             <input class="input-field-" 
+                                             type="text"
+                                             name=""
+                                             maxlength="26"
+                                             placeholder="brief description of sample max 145 words" required> 
+                                            </div>
+                                            <div class="input-icons-"> 
+                                                 <input class="input-field-" 
+                                                 type="text"
+                                                 name="download_link"
+                                                 placeholder="sample download link"> 
+                                                </div>    
+                                   <h3>sample Image
+                                  <input type="file" name="file" accept="image/*" onchange="preview_sample(event)" required></h3>
+                                     <img id="sample_image" style="width:200;height:200; background-image: url('images/img.jpg');border: 3px solid white;"/>
+                                
+                                    </div>
+                                    <button onclick="addMore()" class="add_btn"><i class="fa fa-plus"></i>Add more samples</button>
+                                </div>
+                                <p><input type="submit" class="uploadbtn" name="action" value="Upload"></p>
+                            </form> 
+                    </div>
+                    </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script src="ckeditor/ckeditor.js"></script>
+   </body>
+</html>
